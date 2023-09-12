@@ -12,6 +12,7 @@ import {
 import React, { useEffect, useState } from "react";
 import TableData from "./TableData";
 import { useNavigate } from "react-router-dom";
+import { deleteFn, filterArray, sortFnASC, sortFnDSC } from "../helper/helper";
 
 const Read = () => {
   const [employeeData, setEmployeeData] = useState([]);
@@ -26,34 +27,7 @@ const Read = () => {
     setEmployeeData(JSON.parse(userData));
   }, []);
 
-  const deleteFn = (id) => {
-    const updatedData = [...employeeData];
-    updatedData.splice(id, 1);
-    setEmployeeData(updatedData);
-    localStorage.setItem("data", JSON.stringify(updatedData));
-  };
-  const filterData = employeeData && employeeData.length > 0
-  ? employeeData.filter((user) =>
-      user.userName.toLowerCase().includes(searchText)
-    )
-  : [];
-
-
- 
-
-  const sortFnASC = () => {
-    let data = [...employeeData];
-    data.sort((a, b) => a.userName.localeCompare(b.userName)); // Use localeCompare for string comparison
-    setEmployeeData(data);
-    setToggle(true);
-  };
-
-  const sortFnDSC = () => {
-    let data = [...employeeData];
-    data.sort((a, b) => b.userName.localeCompare(a.userName)); // Use localeCompare for string comparison
-    setEmployeeData(data);
-    setToggle(false);
-  };
+  const filterData = filterArray(employeeData,searchText)
 
   const handleEdit = (id) => {
     localStorage.setItem('editIndex', id)
@@ -74,7 +48,7 @@ const Read = () => {
             style={{ margin: "20px" }}
             variant="contained"
             color="secondary"
-            onClick={sortFnDSC}
+            onClick={() =>  sortFnDSC(employeeData,setEmployeeData,setToggle)}
           >
             Sort Name in DSC
           </Button>
@@ -83,7 +57,7 @@ const Read = () => {
             style={{ margin: "20px" }}
             variant="contained"
             color="secondary"
-            onClick={sortFnASC}
+            onClick={() => sortFnASC(employeeData,setEmployeeData,setToggle)}
           >
             {" "}
             Sort Name in ASC{" "}
@@ -120,7 +94,7 @@ const Read = () => {
                       variant="contained"
                       color="secondary"
                       onClick={() => {
-                        deleteFn(index);
+                        deleteFn(index,employeeData,setEmployeeData);
                       }}
                     >
                       Delete
