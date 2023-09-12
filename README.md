@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+## Feedback
+1. I have done my best 
+2 . it was great learning experience, hence I never used Material UI before
+3. thanks for alloting me with such assignment it was great learning for me
+4 . looking forward for positive feedback
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Task: Build a User Management Application
 
-## Available Scripts
+## Description:
+You are tasked with building a user management application using ReactJS, Redux, and Material UI. The application should allow users to perform basic CRUD (Create, Read, Update, Delete) operations on user data.
 
-In the project directory, you can run:
+## Requirements:
+1. The application should have a responsive layout using Material UI components.
+2. Implement a form to add new users. The form should include fields for name, email, and role.
+3. Display a list of all users fetched from the localstorage. Each user should be displayed in a table-like format, showing their name, email, and role.
+4. Provide functionality to edit and delete individual users.
+5. Implement client-side form validation for the user input fields.
+6. Utilize Redux for state management, including actions and reducers for fetching users, adding a user, editing a user, and deleting a user.
+7. Use Redux Toolkit to simplify the Redux setup and logic.
+8. Implement error handling and display appropriate messages in case of any failures or invalid user inputs.
+9. Implement pagination or infinite scrolling for the user list.
+10. Add sorting and filtering options for the user list.
 
-### `npm start`
+Bonus Points (Optional):
+- Any new feature which you can add by applying your own creativity.
+- Implement unit tests for Redux actions and reducers using a testing library like Jest.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Guidelines:
+1. Use ReactJS and Material UI components for building the user interface.
+2. You can use any preferred JavaScript features and ES6+ syntax.
+3. Use Redux and Redux Toolkit for state management.
+4. You may use any additional libraries or tools from the mentioned skill set if necessary.
